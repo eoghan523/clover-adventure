@@ -1,0 +1,46 @@
+
+/* CCS Variables */
+
+
+
+/* General CSS styles */
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    min-height: 100vh;
+    background-image: url("/Assets/Images/Sedona_view.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.navbar {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .1); 
+    background-color: white;
+}
+.navbar ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar li {
+    height: 50px;
+}
+.navbar a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.navbar a:hover {
+    background-color: aliceblue;
+}

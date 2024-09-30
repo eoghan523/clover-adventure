@@ -16,12 +16,15 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: auto;
 }
 
 
 .navbar {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .1); 
     background-color: white;
+    border-radius: 3%;
+    
 }
 .navbar ul {
     width: 100%;
@@ -43,4 +46,9 @@ body {
 }
 .navbar a:hover {
     background-color: aliceblue;
+}
+
+.about {
+margin-top: 100%;
+padding: 20px;
 }

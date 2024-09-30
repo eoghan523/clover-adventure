@@ -24,6 +24,7 @@
  justify-content: space-evenly;
  box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
  border-radius: 5%; 
+ z-index: 100;
 }
 
 .header-heading {
@@ -179,13 +180,13 @@ box-shadow: 10px 29px 61px 0px rgba(0,0,0,0.75);
 
 
 .footer {
-position: -webkit-sticky;
+position: fixed;
 padding: 5px;
 z-index: 10;
 color: rgb(40, 38, 38);
 font-size: 20px;
 display: flex;
-height: 1%;
+height: 100px;
 }
 
 .copyright {
@@ -203,4 +204,80 @@ height: 1%;
 .gallery-body {
     background-color: #fab45eb1;
 
+}
+
+.about-body {
+    
+min-height: 100vh;
+
+background-image: url("/Assets/Images/Jerome.JPG");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+overflow: scroll;
+display: flex;
+flex-grow: 1;
+flex-shrink: 1;
+flex-direction: row;
+flex-direction: column;
+text-align: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 300px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 2.5%;
+    
+}
+.about-text h2 {
+    font-size: 50px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: antiquewhite;
+    border-radius: 2.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    border:  solid;
+}
+.about-text p {
+    border: solid;
+    border-radius: 2.5%;
+    background-color: antiquewhite;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.contact-body {
+    display: flex;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 2px;
+}
+
+.contact-container {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    padding: 12px;
+    
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 2.5%;
+}
+
+contact-box {
+   
 }

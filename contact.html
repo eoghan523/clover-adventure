@@ -10,10 +10,10 @@
 <body class="contact-body">
 
     <header class="header-main">
-        <div class="header-main-logo">
+        <section class="header-main-logo">
             <h1 class="header-heading">Clover's Adventure</h1>
             <img src="./Assets/misc_images/clover_logo.jpg" alt="Clover_adventures_logo">
-        </div>
+        </section>
         
             <nav class="header-main-nav">
                 <ul>
@@ -24,20 +24,20 @@
                 </ul>
             </nav>
         
-        <div class="header-main-sm">
-          <div class="header-main-sm-github">
-            <img src="/Assets/misc_images/github-6980894_640.png" alt="github link">
-          </div>
-            <div class="header-main-sm-ig">
+        <section class="header-main-sm">
+            <section class="header-main-sm-github">
+                <img src="/Assets/misc_images/github-6980894_640.png" alt="github link">
+            </section>
+            <section class="header-main-sm-ig">
                 <img src="/Assets/misc_images/instagram-1581266_640.jpg" alt="instagram link">
-            </div>
+            </section>
         
-        </div>
+        </section>
 
     </header>
 
-    <div class="contact-container" id="contact-container">
-        <div class="contact-box" id="contact-box">
+    <main class="contact-container" id="contact-container">
+        <section class="contact-box" id="contact-box">
             <form action="action_page.php">
       
                 <label class="fname"for="fname">First Name</label>
@@ -52,9 +52,15 @@
                 <label class="phone" for="phone">Phone</label>
                 <input type="text" id="phone" name="phone" placeholder="Your phone number...">
 
-
-        </div>
-    </div>
+                <label class="subject"" for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Tell us what your favourite photo is and why?... " style="height:200px"></textarea>
+      
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        
+    </main>
 
 
        
@@ -68,7 +74,7 @@
 </body>
 
 <footer class="footer">
-    <div class="copyright">©Copyright:all rights reserved(2024)</div>
+    <main class="copyright">©Copyright:all rights reserved(2024)</main>
 
 </footer>
 </html>

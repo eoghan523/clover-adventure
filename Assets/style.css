@@ -24,7 +24,7 @@
  justify-content: space-evenly;
  box-shadow: 3px 3px 5px rgba(0, 0, 0, .1);
  border-radius: 5%; 
- z-index: 100;
+ 
 }
 
 .header-heading {
@@ -136,6 +136,7 @@ background-repeat: no-repeat;
 background-position: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
 overflow: auto;
+display: flex;
 }
 
 
@@ -180,26 +181,33 @@ box-shadow: 10px 29px 61px 0px rgba(0,0,0,0.75);
 
 
 .footer {
-position: fixed;
+position:fixed ;
 padding: 5px;
-z-index: 10;
-color: rgb(40, 38, 38);
+color: rgb(0, 0, 0);
 font-size: 20px;
 display: flex;
-height: 100px;
+bottom: 0px;
+justify-content: center;
+z-index: 10;
 }
 
 .copyright {
     justify-content: center;
-    display: flex;
-    position: sticky;
-    border-bottom: 0px;
+    display: flexbox;
+    border-bottom: 0;
     cursor: pointer;
+    background-color: #fab45eb1;
+}
+.copyright:hover {
+    transform:scale(1.10);
+    color: blue;
+}
+.copyright:visited {
+    background: url(#);
 }
 
-.copyright:link{
+
     
-}
 
 .gallery-body {
     background-color: #fab45eb1;
@@ -258,26 +266,86 @@ text-align: center;
 
 .contact-body {
     display: flex;
-    text-align: center;
+    text-align: left;
     background-color: antiquewhite;
     padding: 10px;
     margin: 2px;
+    width: 100%;
 }
 
 .contact-container {
     display: flex;
-    text-align: center;
+    text-align: left;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 300px;
+    margin-top: 150px;
     padding: 12px;
-    
-    color: rgb(0, 0, 0);
+    border: 2px 2px 2px solid;
+    color: rgb(0, 4, 5);
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 2.5%;
 }
 
-contact-box {
-   
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    resize: vertical;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 16px; 
+    resize: horizontal;
+}
+
+input[type=submit] {
+    background-color: gold;
+    font-size: large;
+    font-weight: 200;
+    padding: 3px;
+    display: flex;
+    border-radius: 2.5%;
+    border: none;
+}
+input[type=submit]:hover {
+    transform: translate(10px, 10px);
+    color: blue;  
+}
+
+.fname::after {
+    content: "😊";
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lname::after {
+    content: "🕵️‍♂️";
+    padding: 12px;
+    cursor: pointer;
+}
+.email::after {
+    content: "📬";
+    padding: 12px;
+    cursor: pointer;
+}
+.phone::after {
+    content: "📲";
+    padding: 12px;
+    cursor: pointer;
+}
+
+.subject::after {
+    content: "📷";
+    padding: 12px;
+    cursor: pointer;
+    
+
 }

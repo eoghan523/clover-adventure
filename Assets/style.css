@@ -130,7 +130,7 @@ transform: translate(30px 30px);
 .index_body {
 
 min-height: 100vh;
-background-image: url("/Assets/Images/Sedona_view.JPG");
+background-image: url("./Images/Sedona_view.JPG");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -218,7 +218,7 @@ z-index: 10;
     
 min-height: 100vh;
 
-background-image: url("/Assets/Images/Jerome.JPG");
+background-image: url("./Images/Jerome.JPG");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
